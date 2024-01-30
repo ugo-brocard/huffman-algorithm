@@ -18,18 +18,19 @@ class Huffman:
         return len([character for character in string if character == letter])
 
     @staticmethod
-    def get_letters_rate(string: str) -> dict:
-        rates = {}
+    def get_letters_frequency(string: str) -> dict:
+        frequencies = {}
 
         for letter in string:
-            rates[letter] = Huffman.count_letter(string, letter)
+            frequencies[letter] = Huffman.count_letter(string, letter)
 
-        return dict(sorted(sorted(rates.items()), key = lambda x: x[1]))
+        return dict(sorted(sorted(frequencies.items()), key = lambda x: x[1]))
 
     @staticmethod
-    def generate_tree(rates: dict) -> Node:
-        nodes = [Node(rate[0], rate[1]) for rate in rates.items()]
+    def generate_tree(string: str) -> Node:
+        frequencies = Huffman.get_letters_frequency(string)
 
+        nodes = [Node(frequency[0], frequency[1]) for frequency in frequencies.items()]
         while len(nodes) > 1:
             left  = nodes.pop(0)
             left.code = "0"
@@ -65,8 +66,7 @@ class Huffman:
 
     @staticmethod
     def generate_dictionary(string: str) -> dict:
-        rates = Huffman.get_letters_rate(string)
-        tree  = Huffman.generate_tree(rates)
+        tree  = Huffman.generate_tree(string)
 
         return Huffman.calculate_codes(tree)
 
@@ -91,3 +91,7 @@ class Huffman:
                 cache    = ""
 
         return decoded
+
+
+dictionary = Huffman.get_letters_frequency("Hello World")
+print(dictionary)

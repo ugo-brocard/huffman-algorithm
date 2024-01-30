@@ -14,3 +14,8 @@ class TestHuffman(unittest.TestCase):
         dictionary = Huffman.generate_dictionary("Hello World")
 
         self.assertEqual(Huffman.decode(encoded, dictionary), "Hello World")
+
+    def test_dictionary_generation(self):
+        dictionary = Huffman.generate_dictionary("Hello World")
+        
+        self.assertEqual(dictionary, {'W': '000', 'd': '001', 'e': '010', 'r': '011', 'l': '10', 'o': '110', ' ': '1110', 'H': '1111'})
