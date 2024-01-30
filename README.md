@@ -1,12 +1,12 @@
 # huffman-algorithm
 <div align="center">
-    Huffman algorithm is a python implementation of the **huffman algorithm** it's an efficient encoding algorithm for text.
+    Huffman algorithm is a python implementation of the <b>huffman algorithm</b> it's an efficient encoding algorithm for text.
     <br>
     <br>
-    <img alt="GitHub License" src="https://img.shields.io/github/license/ugo-brocard/matrices-py"/>
-    <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/ugo-brocard/matrices-py/publish.yml"/>
-    <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/matrices-py"/>
-    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ugo-brocard/matrices-py"/>
+    <img alt="GitHub License" src="https://img.shields.io/github/license/ugo-brocard/huffman-algorithm"/>
+    <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/ugo-brocard/huffman-algorithm/publish.yml"/>
+    <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/huffman-algorithm"/>
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ugo-brocard/huffman-algorithm"/>
 </div>
 
 ## ✨ Key features
