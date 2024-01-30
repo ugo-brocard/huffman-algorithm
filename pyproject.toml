@@ -19,3 +19,6 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://www.github.com/ugo-brocard/huffman-algorithm"
+
+[tool.hatch.build.targets.wheel]
+packages = ["huffman"]
