@@ -91,15 +91,3 @@ class Huffman:
                 cache    = ""
 
         return decoded
-
-# --------------------------------- EXECUTION --------------------------------- #
-string = "Hello World !"
-print(f"string:  {string}")
-
-encoded    = Huffman.encode(string)
-print(f"encoded: { encoded }")
-
-dictionary = Huffman.generate_dictionary(string)
-decoded    = Huffman.decode(encoded, dictionary)
-print(f"decoded: { decoded }")
-# ----------------------------------------------------------------------------- #
