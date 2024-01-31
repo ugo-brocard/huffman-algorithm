@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huffman-algorithm"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
     {name = "Ugo Brocard", email="ugo.brocard.official+contact@gmail.com"},
 ]
