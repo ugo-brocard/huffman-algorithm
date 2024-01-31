@@ -91,7 +91,3 @@ class Huffman:
                 cache    = ""
 
         return decoded
-
-
-dictionary = Huffman.get_letters_frequency("Hello World")
-print(dictionary)
